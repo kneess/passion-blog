@@ -7,6 +7,8 @@ import { BlogPostService } from '../blog-post.service';
   templateUrl: './blogpost-list.component.html',
   styleUrls: ['./blogpost-list.component.css']
 })
+
+// BlogpostListComponent uses blogpostservice to fetch all the entities persisted in the db and stores them in the blogPosts field
 export class BlogpostListComponent implements OnInit {
 
   blogPosts!: BlogPost[];
