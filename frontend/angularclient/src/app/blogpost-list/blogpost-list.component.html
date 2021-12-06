@@ -1,0 +1,24 @@
+<div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Heading</th>
+            <th scope="col">URL</th>
+            <th scope="col">Body</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- ngFor is a directive also called a repeater used for iterating over content -->
+          <tr *ngFor="let blogpost of blogPosts">
+            <!-- variable interpolation for showing the id, heading, body, and imageUrl of each blogpost -->
+            <td>{{ blogpost.id }}</td>
+            <td>{{ blogpost.heading }}</td>
+            <td>{{ blogpost.imageUrl }}</td>
+            <td>{{ blogpost.body }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
